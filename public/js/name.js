@@ -1,4 +1,5 @@
-document.getElementById("wyslij").onclick(()=>{
-    let name = document.getElementById("name").innerText
-    window.location = "/user/" + name
-})
+document.getElementById("wyslij").onclick = () => {
+    var nameElement = document.getElementById("name");
+    var nameText = nameElement.value;
+    window.location = `/user/${nameText}`
+}
